@@ -8,13 +8,12 @@ stuff later on.
 """
 from textwrap import dedent
 from types import CodeType
-from inspect import getargspec
 from uuid import uuid4
 
 from toolz.curried.operator import getitem
 from six import viewkeys, exec_, PY3
 
-from trading_calendars.utils.compat import wraps
+from trading_calendars.utils.compat import getargspec, wraps
 
 
 _code_argorder = (
